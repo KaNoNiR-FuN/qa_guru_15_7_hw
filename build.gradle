@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.dakharitonov'
+version '1.0-SNAPSHOT'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+            "com.codeborne:selenide:6.7.4",
+            'org.junit.jupiter:junit-jupiter:5.9.0',
+            'org.slf4j:slf4j-simple:2.0.1',
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
