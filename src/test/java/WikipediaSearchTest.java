@@ -1,4 +1,4 @@
-import Data.Locale;
+import data.Locale;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -46,9 +46,9 @@ public class WikipediaSearchTest {
 
     static Stream<Arguments> wikipediaSisterProjectsTest() {
         return Stream.of(
-                Arguments.of(Locale.English, List.of("Wikimedia Commons", "MediaWiki", "Meta-Wiki", "Multilingual Wikisource", "Wikispecies",
+                Arguments.of(Locale.ENGLISH, List.of("Wikimedia Commons", "MediaWiki", "Meta-Wiki", "Multilingual Wikisource", "Wikispecies",
                         "Wikibooks", "Wikidata", "Wikimania", "Wikinews", "Wikiquote", "Wikisource", "Wikiversity", "Wikivoyage", "Wiktionary")),
-                Arguments.of(Locale.Русский, List.of("Викисклад", "Медиавики", "Мета-вики", "Многоязычная Викитека", "Викивиды",
+                Arguments.of(Locale.РУССКИЙ, List.of("Викисклад", "Медиавики", "Мета-вики", "Многоязычная Викитека", "Викивиды",
                         "Викиучебник", "Викиданные", "Викимания", "Викиновости", "Викицитатник", "Викитека", "Викиверситет", "Викигид",
                         "Викисловарь", "Элемент Викиданных"))
         );
